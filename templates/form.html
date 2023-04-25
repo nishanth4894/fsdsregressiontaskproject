@@ -1,0 +1,107 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="Delivery_person_ID">Delivery_person_ID:</label>
+        <input type="text" id="Delivery_person_ID" name="Delivery_person_ID" placeholder="Enter Delivery_person_ID value">
+    </div>
+
+    <div class="form-group">
+        <label for="Delivery_person_Age">Depth:</label>
+        <input type="text" id="Delivery_person_Age" name="Delivery_person_Age" placeholder="Enter Delivery_person_Age value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="Delivery_person_Ratings">Table:</label>
+        <input type="text" id="Delivery_person_Ratings" name="Delivery_person_Ratings" placeholder="Enter Delivery_person_Ratings value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="Order_Date">x:</label>
+        <input type="text" id="Order_Date" name="Order_Date" placeholder="Enter Order_Date value">
+    </div>
+  
+    <div class="form-group">
+        <label for="Time_Orderd">y:</label>
+        <input type="text" id="Time_Orderd" name="Time_Orderd" placeholder="Enter Time_Orderd value">
+    </div>
+  
+    <div class="form-group">
+        <label for="Time_Order_picked">z:</label>
+        <input type="text" id="Time_Order_picked" name="Time_Order_picked" placeholder="Enter Time_Order_picked value">
+    </div>
+    
+    <div class="form-group">
+        <label for="multiple_deliveries">z:</label>
+        <input type="text" id="multiple_deliveries" name="multiple_deliveries" placeholder="Enter multiple_deliveries value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="Vehicle_condition">z:</label>
+        <input type="text" id="Vehicle_condition" name="Vehicle_condition" placeholder="Enter Vehicle_condition value (float)">
+    </div>
+  
+<div class="form-group">
+  <label for="Weather_conditions">Cut:</label>
+  <select id="Weather_conditions" name="Weather_conditions">
+    <option value="Sandstorms">Sandstorms</option>
+    <option value="Stormy">Stormy</option>
+    <option value="Fog">Fog</option>
+    <option value="Windy">Windy</option>
+    <option value="Cloudy">Cloudy</option>
+    <option value="Sunny">Sunny</option>
+  </select>
+</div>
+  
+<div class="form-group">
+  <label for="Road_traffic_density">Color:</label>
+  <select id="Road_traffic_density" name="Road_traffic_density">
+    <option value="Jam">Jam</option>
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="Type_of_order">Clarity:</label>
+  <select id="Type_of_order" name="Type_of_order">
+    <option value="Meal">Meal</option>
+    <option value="Buffet">Buffet</option>
+    <option value="Snack">Snack</option>
+    <option value="Drinks">Drinks</option>
+  </select>
+</div>
+
+<div class="form-group">
+    <label for="Type_of_vehicle">Clarity:</label>
+    <select id="Type_of_vehicle" name="Type_of_vehicle">
+      <option value="motorcycle">motorcycle</option>
+      <option value="scooter">scooter</option>
+      <option value="electric_scooter">electric_scooter</option>
+      <option value="bicycle">bicycle</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="Festival">Clarity:</label>
+    <select id="Festival" name="Festival">
+      <option value="No">No</option>
+      <option value="Yes">Yes</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="City">Clarity:</label>
+    <select id="City" name="City">
+      <option value="Metropolitian">Metropolitian</option>
+      <option value="Urban">Urban</option>
+      <option value="Semi-Urban">Semi-Urban</option>
+    </select>
+  </div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
