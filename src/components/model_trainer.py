@@ -2,6 +2,16 @@
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.tree import DecisionTreeRegressor
+from xgboost import XGBRegressor 
+from catboost import CatBoostRegressor
+from sklearn.ensemble import (
+    AdaBoostRegressor,
+    GradientBoostingRegressor,
+    RandomForestRegressor,
+)
+
 from src.exception import CustomException
 from src.logger import logging
 
@@ -36,7 +46,15 @@ class ModelTrainer:
             "LinearRegression":LinearRegression(),
             "Lasso":Lasso(),
             "Ridge":Ridge(),
-            "Elasticnet":ElasticNet()
+            "Elasticnet":ElasticNet(),
+            "XGBRegressor": XGBRegressor(),
+            "CatBoosting Regressor": CatBoostRegressor(verbose=False),
+            "AdaBoost Regressor": AdaBoostRegressor(),
+            "Random Forest": RandomForestRegressor(),
+            "Decision Tree": DecisionTreeRegressor(),
+            "Gradient Boosting": GradientBoostingRegressor()
+
+
         }
             
 
